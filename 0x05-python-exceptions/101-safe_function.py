@@ -10,5 +10,5 @@ def safe_function(fct, *args):
         sys.stderr.write("Exception: division by zero\n")
     except IndexError:
         result = None
-        sys.stderr.write("Exception: division by zero\n")
+        sys.stderr.write("Exception: list index out of range\n")
     return result
