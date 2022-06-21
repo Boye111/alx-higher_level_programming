@@ -3,5 +3,6 @@
 Just a class
 """
 
+
 class Square:
     pass
