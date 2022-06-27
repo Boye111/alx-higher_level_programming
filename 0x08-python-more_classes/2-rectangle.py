@@ -7,9 +7,6 @@ A simple REctangle
 class Rectangle:
     """ A class that defines a rectangle """
     def __init__(self, width=0, height=0):
-        self.check_width(width)
-        self.check_height(height)
-
         self.width = width
         self.height = height
 
