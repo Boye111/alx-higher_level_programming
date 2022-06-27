@@ -34,7 +34,7 @@ class Rectangle:
         if self.check_if_positive(width) is False:
             raise ValueError('width must be >= 0')
 
-    def check_height(self, width):
+    def check_height(self, height):
         if self.check_if_int(height) is False:
             raise TypeError('height must be an integer')
         if self.check_if_positive(height) is False:
