@@ -63,14 +63,14 @@ class Rectangle(Base):
         self.__y = param
 
     def check_integer_parameter(self, value, param):
-         if type(value) is not int:
-             raise TypeError(param + ' must be an integer')
+        if type(value) is not int:
+            raise TypeError(param + ' must be an integer')
 
-         if value <= 0 and param in ('width', 'height'):
-             raise ValueError(param + ' must be > 0')
+        if value <= 0 and param in ('width', 'height'):
+            raise ValueError(param + ' must be > 0')
 
-         if value < 0 and param in ('x', 'y'):
-             raise ValueError(param + ' must be >= 0')
+        if value < 0 and param in ('x', 'y'):
+            raise ValueError(param + ' must be >= 0')
 
     def area(self):
         return self.__width * self.__height

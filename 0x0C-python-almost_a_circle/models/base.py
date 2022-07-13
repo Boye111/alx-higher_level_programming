@@ -7,6 +7,7 @@ A file named base
 class Base:
     """ A class named Base """
     __nb_objects = 0
+
     def __init__(self, id=None):
         if id is None:
             Base.__nb_objects += 1
@@ -33,7 +34,7 @@ class Base:
                 json_attrs.append(elem.to_dictionary())
 
             return f.write(cls.to_json_string(json_attrs))
-    
+
     @staticmethod
     def from_json_string(json_string):
         if json_string is None or len(json_string) == 0:
