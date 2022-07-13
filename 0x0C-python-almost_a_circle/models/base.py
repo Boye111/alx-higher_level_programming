@@ -4,6 +4,10 @@ A file named base
 """
 
 
+from os import path
+import json
+
+
 class Base:
     """ A class named Base """
     __nb_objects = 0
@@ -11,7 +15,7 @@ class Base:
     def __init__(self, id=None):
         if id is None:
             Base.__nb_objects += 1
-            self.id = Base.nb_objects
+            self.id = Base.__nb_objects
         else:
             self.id = id
 
@@ -19,6 +23,8 @@ class Base:
     def to_json_string(list_dictionaries):
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return '[]'
+
+        return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
