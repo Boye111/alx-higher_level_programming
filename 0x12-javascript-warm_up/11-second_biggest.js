@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const len = process.argv.length;
 const nums = process.argv.slice(2).map(function (n) {
 	return parseInt(n);

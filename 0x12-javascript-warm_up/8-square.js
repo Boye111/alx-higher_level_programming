@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const size = parseInt(process.argv[0]);
 
 if (size) {

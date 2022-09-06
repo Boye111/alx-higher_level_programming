@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const limit = parseInt(process.argv[0]);
 
 if (limit) {

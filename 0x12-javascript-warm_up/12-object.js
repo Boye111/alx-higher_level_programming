@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const myobject = {
 	type: "object",
 	value: 12
