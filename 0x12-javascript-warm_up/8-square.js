@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const size = parseInt(process.argv[0]);
+const size = parseInt(process.argv[2]);
 
 if (size) {
   for (let i = 0; i < size; ++i) {
@@ -9,7 +9,7 @@ if (size) {
       process.stdout.write('X');
     }
 
-    if (j == size) {
+    if (j === size) {
       console.log('');
     }
   }

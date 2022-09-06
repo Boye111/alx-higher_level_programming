@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const limit = parseInt(process.argv[0]);
+const limit = parseInt(process.argv[2]);
 
 if (limit) {
   for (let i = 0; i < limit; ++i) {

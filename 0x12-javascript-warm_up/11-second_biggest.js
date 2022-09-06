@@ -11,7 +11,7 @@ if (len > 3) {
 	let n = 0;
 	let secbig = min;
 
-	for (; i < len, ++i) {
+	for (; i < len; ++i) {
 		n = nums[i];
 
 		if (n > secbig && n < max) {
