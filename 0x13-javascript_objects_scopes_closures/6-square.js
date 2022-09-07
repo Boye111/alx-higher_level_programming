@@ -12,5 +12,8 @@ module.exports = class Square extends OldSquare {
 
   charPrint (c = 'X') {
     super.print(c);
+	  if (c === undefined) {
+		  super.print('X');
+	  }
   }
 };
