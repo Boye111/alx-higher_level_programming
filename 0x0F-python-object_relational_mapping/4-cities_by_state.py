@@ -7,10 +7,10 @@ lists all cities in a database
 import MySQLdb
 from sys import argv
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     """ lists cities in the db """
     db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
-                         password=argv[2], db_name=argv[3])
+                         password=argv[2], db=argv[3])
     with db.cursor() as cur:
         cur.execute("""
             SELECT
