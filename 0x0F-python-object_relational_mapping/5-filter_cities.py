@@ -20,7 +20,7 @@ if __name__ == '__main__':
             JOIN
                 states
             ON
-                cities.state_id = state.id
+                cities.state_id = states.id
             WHERE
                 states.name LIKE BINARY %(state_name)s
             ORDER BY

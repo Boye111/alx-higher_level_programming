@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-prints all city objects
+prints all city objects in a db
 """
 
 from sys import argv
