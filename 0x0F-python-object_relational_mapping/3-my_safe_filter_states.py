@@ -9,7 +9,8 @@ from sys import argv
 
 if __name__ = '__main__':
     """ access states without sql injections """
-    db = MySQLdb.connect(host="localhost", user=argv[1], port=3306, password=argv[2], db_name=argv[3])
+    db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
+                         password=argv[2], db_name=argv[3])
     with db.cursor() as cur:
         cur.execute("""
         SELECT
